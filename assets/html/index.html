@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-commerce product page</title>
 
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <script src="/javascript/script.js"></script>
 </head>
 <body>
     <header>
         <nav>
             <div id="menu">
-                <div id="menu-bar" onclick="menuOnclick()">
+                <div id="menu-bar" onclick="menuOnClick()">
                 <div id="bar1" class="bar"></div>
                 <div id="bar2" class="bar"></div>
                 <div id="bar3" class="bar"></div>
@@ -33,13 +35,13 @@
             </div>
             <div id="menu-bg" class="menu-bg" > </div>
             
-        <img src="images/logo.png" alt="logo image">
-        <div id="cart"><img src="images/icon-cart.png" alt="cart image"></div>
-        <div id="profile"><img src="images/image-avatar.png" alt="profile image"></div>
+        <img id="logo" src="/images/logo.svg" alt="logo image">
+        <div id="cart"><img src="/images/icon-cart.png" alt="cart image"></div>
+        <div id="profile"><img src="/images/image-avatar.png" alt="profile image"></div>
     </nav>
     </header>
     <main>
-        <div id="images"></div>
+        <img id="images" src="/images/image-product-1-cut.jpg" alt="Imagem do produto à venda">
         <h1>SNEAKER COMPANY</h1>
         <div id="description">
             <h2>Fall Limited Edition Sneakers</h2>
@@ -51,7 +53,7 @@
             <div id="discount">50%</div>
             <div id="price">$250</div>
 
-            <div></div>
+            <div id="quant"></div>
 
             <button>Add to cart</button>
 

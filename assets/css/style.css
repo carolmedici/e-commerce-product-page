@@ -1,0 +1,230 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+:root{
+    /*colors*/
+    --button-color: #ff7d1a;
+    --shadow-buton: #ffede0;
+    --title-color: #1d2025;
+    --text-color:#68707d;
+    --price-color: 	#b6bcc8;
+    --back-color: #f7f8fd;
+
+    /*fonts*/
+    --font: 'Kumbh Sans', sans-serif;
+
+
+    /*accessibility*/
+    font-size: 62.5%;
+}
+
+body{
+    font-family: var(--font);
+    padding: 2rem;
+}
+
+@media (max-width:37.5rem) {
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 0.8rem  
+    }
+
+    #menu{
+        z-index: 2;
+        margin-top: -1.4rem;
+    }
+
+    #menu-bar{
+        width: 2rem;
+        height: 3rem;
+        cursor: pointer;
+        margin-top: 2.7rem;
+    }
+
+    .bar{
+        height: 0.4em;
+        width: 100%;
+        background-color: var(--text-color);
+        display: block;
+        transition: 0.3s ease;
+    }
+
+    #bar1{ 
+        transform: translateY(-4px);
+
+    }
+
+    #bar3{
+        transform: translateY(4px);
+        
+    }
+
+    .nav{
+        transition: 0.3s ease;
+        display: none;
+        background-color: white;
+        
+        
+    }
+
+    .nav ul{
+        width: 20rem;
+        height: 50rem;
+        padding-left: 2rem;
+        padding-top: 2rem;
+    }
+
+    .nav li{
+        list-style: none;
+        padding-bottom: 1.8rem;
+        font-weight: 800;
+        font-size: 1.4rem;
+              
+
+    }
+
+    .nav li a{
+        text-decoration: none;
+        color: var(--title-color);
+        
+    }
+
+    .nav li a:hover{
+        color: var(--button-color);
+        
+    }
+
+    
+    .menu-bg #menu{
+        top: 0;
+        left: 0;
+        position: absolute;
+    }
+
+    .menu-bg {
+        z-index: 2;
+        margin: 3rem 0 2rem 2rem;
+        background-color: white;
+        transition: 0.3s ease;
+    }
+
+    .change{
+        display: block;
+        margin-left: -2rem;
+        
+    }
+
+    
+
+    .change .bar{
+       color: var(--text-color);
+       margin-left: 2rem;
+    }
+
+    .change #bar1{
+        transform: translateY(4px) rotateZ(-45deg);
+    }
+    .change #bar2 {
+        opacity: 0;
+    }
+      
+    .change #bar3 {
+        transform: translateY(-4px) rotateZ(45deg);
+    }
+    
+    #logo{
+    position: fixed;
+    right: 30rem;
+    top: 3.6rem;
+    }
+
+
+    #cart{
+    position: fixed;
+    right: 8rem;
+    top: 3.4rem;
+    }
+
+    #profile{
+    position: fixed;
+    right: 2rem ;
+    top: 3.1rem;
+    }
+
+
+    #images{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 8rem;
+    }
+
+h1{
+    position: fixed;
+    top: 52rem;
+    color: var(--button-color);
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.242);
+    letter-spacing: 2px;
+}
+
+
+h2{
+    position: fixed;
+    top: 55.5rem;
+    color: var(--title-color);
+    font-size: 2.7rem;
+    font-weight: 700px;
+    letter-spacing: 0px;
+}
+
+p{
+    position: fixed;
+    top: 60rem;
+    font-size: 1.4rem;
+    color: var(--text-color);
+    line-height: 2.2rem;
+}
+
+
+#coust{
+    position: fixed;
+    top: 69rem;
+    display: grid;
+    grid-template-rows: 3;
+    grid-template-columns: 3;
+}
+
+#dis-price{
+    color: var(--title-color) ;
+    font-size: 2.5rem;
+    font-weight: 700;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#discount{
+    color: var(--button-color);
+    padding: 0.5rem;
+    background-color: var(--shadow-buton);
+    border-radius: 0.8rem;
+    grid-column-start: 2;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 1.5rem;
+    vertical-align: middle;
+}
+
+
+} 
+
