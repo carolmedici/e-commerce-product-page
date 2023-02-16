@@ -31,7 +31,7 @@ body{
 }
 
 
-@media (max-width:29rem) {
+
     #logo{
         display: flex;
         flex-direction: column;
@@ -112,19 +112,38 @@ body{
         
         #discount{
             color: var(--button-color);
-            padding: 0.5rem;
+            padding-top: 0.2rem;
+            padding-bottom: 0.4rem;
             background-color: var(--shadow-buton);
             border-radius: 0.8rem;
             grid-column-start: 2;
-            gap: 2rem;
             font-size: 1.5rem;
             font-weight: 700;
             height: 1.5rem;
-            vertical-align: middle;
+            text-align: center;
+            width: 4rem;
+            margin-top: 1rem;
+            margin-top: 0.3rem;
+            position: relative;
+            left: -14rem;
+            top:0.1rem;
+            
+        }
+
+        #price{
+            text-decoration: line-through;
+            color: var(--price-color);
+            grid-column-start: 3;
+            margin-left: 3rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+            position: relative;
+            left: -12rem;
+            top: 0.4rem;
         }
         
 
-}
+
 
 
     header{
@@ -240,18 +259,93 @@ body{
     .change #bar3 {
         transform: translateY(-4px) rotateZ(45deg);
     }
+
     
+    .btn{
+        width: 24rem;
+        height: 3rem;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--shadow-buton);
+        margin-top:2rem ;
+        border-radius: 0.6rem;
+
+    }
+
+    .btn button{
+        width: 5rem;
+        border: none;
+        background-color: var(--shadow-buton);
+        
+        
+    }
+
+
+    .addCart{
+        position: relative;
+        bottom: -6rem;
+        right: 28rem;
+        width: 24rem;
+        height: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--button-color);
+        border: none;
+        border-radius: 0.6rem;
+        color: white ;
+        background-image: URL("/assets/images/icon-cart.png") ;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        background-size: 8%;
+        background-position-x: 27%;
+        
+        
+    }
+
+
+    .subBtn, .addBtn{
+        color: var(--button-color);
+        font-weight: 700;
+        font-size: 2rem;
+    }
+
+
+    #quant{
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: var(--title-color);
+    }
+
+
+
+    
+@media (max-width:29rem) {
+
+
+
+
+
+
+
+}
+
     @media (max-width:37.6rem) {
     #logo{
         display: flex;
         flex-direction: column;
         position: absolute;
-        right:48%;
-        top: 5%;
-        width: 38%;
+        right:50rem;
+        
+       
     
-    
-    
+    }
+
+    #profile{
+        position: absolute;
+        top: 38.5rem;
     }
 
     h1{

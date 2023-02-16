@@ -5,6 +5,15 @@ function menuOnClick() {
      
   }
 
-
-
+  function addCart(i){
+    var cartQuant = document.getElementById("quant")
+    var add = document.getElementById("add") 
  
+    if(addCart() || i >= 5 ){
+      cartQuant.innerHTML = Number(cartQuant.value) + 1
+      return;
+    }
+
+    
+  }
+
