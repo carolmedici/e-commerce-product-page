@@ -333,8 +333,75 @@ p{
     }
 
 
+#row {
+    display: none;
+}
 
+.column{
+    display: none;
+
+}
+
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.767);
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    margin: auto;
+    padding: 0;
+    width: 50%;
+  }
     
+
+
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 20rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+   /* Position the "previous button" to the right */
+   .prev {
+    right: 54rem;
+    border-radius: 3px 0 0 3px;
+  }
+
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.421);
+  }
+
 @media (min-width: 22rem) {
 
 #logo{
@@ -393,12 +460,14 @@ p{
 
 @media (min-width: 35rem) {
     
+
     #line{
     position: relative;
     width: 505%;
     border-bottom: 1px solid var(--price-color);
     bottom:43rem;
     right: 21rem;
+    z-index: -1;
 }
 
     #logo{
@@ -468,7 +537,7 @@ p{
     h1{
         position: relative;
         left: 76rem;
-        top: -60.5rem;
+        top: -71.5rem;
         width: 39rem;
        
     }
@@ -476,7 +545,7 @@ p{
             
     h2{
         position: relative;
-        top: -59.5rem;
+        top: -71rem;
         left: 76rem;
         width: 39rem;
     }
@@ -484,7 +553,7 @@ p{
     p{
         position: relative;
         left: 76rem;
-        top: -55.5rem;
+        top: -68.5rem;
         width: 39rem;
         text-align: justify;
     }
@@ -492,7 +561,7 @@ p{
                  
     #coust{
         position: absolute;
-        top: 44rem;
+        top: 42rem;
         display: block;
        
     }
@@ -557,6 +626,175 @@ p{
             color: var(--title-color);
         }
     
+
+
+
+
+    /*lightbox carousel*/
+        .row > .column {
+            float: left;
+            width: 13%;
+          }
+          
+          .row:after {
+            content: "";
+            display: table;
+            clear: both;
+            padding: 0 ;
+          }
+          
+
+
+          /* Create four equal columns that floats next to eachother */
+          .column {
+            float: left;
+            width: 25%;
+          }
+
+          
+          
+          /* The Modal (background) */
+          .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.767);
+          }
+          
+          /* Modal Content */
+          .modal-content {
+            position: relative;
+            margin: auto;
+            padding: 0;
+            width: 50%;
+          }
+          
+          /* The Close Button */
+          .close {
+            color: white;
+            position: absolute;
+            top: 8rem;
+            right: 55rem;
+            font-size: 4rem;
+            font-weight: bold;
+          }
+          
+          .close:hover,
+          .close:focus {
+            color: #999;
+            text-decoration: none;
+            cursor: pointer;
+          }
+          
+          /* Hide the slides by default */
+          .mySlides {
+            display: none;
+            
+          }
+
+          .zoom{
+            border-radius: 0.8rem;
+            position: relative;
+           left: 18rem;
+          }
+          
+          /* Next & previous buttons */
+          .prev,
+          .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -50px;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+            -webkit-user-select: none;
+          }
+          
+          /* Position the "next button" to the right */
+          .next {
+            right: 20rem;
+            border-radius: 3px 0 0 3px;
+          }
+
+           /* Position the "previous button" to the right */
+           .prev {
+            right: 54rem;
+            border-radius: 3px 0 0 3px;
+          }
+
+          
+          /* On hover, add a black background color with a little bit see-through */
+          .prev:hover,
+          .next:hover {
+            background-color: rgba(0, 0, 0, 0.421);
+          }
+          
+          
+          .active,
+          .demo:hover {
+            opacity: 1;
+          }
+          
+          img.hover-shadow {
+            transition: 0.3s;
+          }
+          
+          .hover-shadow:hover {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          }
+
+
+        #row {
+            display: contents;
+        }
+        
+        .column{
+            display: contents;
+            
+        }
+
+        .hover-shadow{
+        position: relative;
+        bottom: 34rem;
+        }
     
+        img >.hover-shadow, img >.demo{
+        width: 50%;
+        height: 50%;
+        }
+
+        .hover-shadow{
+            width: 8rem;
+            border-radius: 0.8rem;
+            margin-left: 2.4rem;
+            position: relative;
+            left: 22rem;
+        }
+
+        
+        .demo{
+            width: 8rem;
+            border-radius: 0.8rem;
+            margin-left: 1rem;
+            position: relative;
+            left: 18rem;
+            opacity: 0.6;
+        }
+    
+        #images{
+            display: flex;
+        }
 
 }

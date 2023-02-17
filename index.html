@@ -12,10 +12,19 @@
 
     <link rel="stylesheet" href="assets/css/responsive.css">
 
-      
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.css" integrity="sha512-GPEZI1E6wle+Inl8CkTU3Ncgc9WefoWH4Jp8urbxZNbaISy0AhzIMXVzdK2GEf1+OVhA+MlcwPuNve3rL1F9yg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-lightbox/0.2.12/slick-lightbox.min.js" integrity="sha512-iSVaq9Huv1kxBDAOH7Il1rwIJD+uspMQC1r4Y73QquhbI2ia+PIXUoS5rBjWjYyD03S8t7gZmON+Dk6yPlWHXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
     <script src="assets/javascript/script.js"></script>
+
 </head>
 <body>
     <header>
@@ -49,6 +58,75 @@
     <main>
         <div id="principal">
             <div><img id="images" src="assets/images/image-product-1-cut.jpg" alt="Imagem do produto à venda"></div>
+
+                <!-- Images used to open the lightbox -->
+                <div class="row">
+                    <div class="column">
+                      <img src="assets/images/image-product-1-thumbnail.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                      <img src="assets/images/image-product-2-thumbnail.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                      <img src="assets/images/image-product-3-thumbnail.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+                    </div>
+                    <div class="column">
+                      <img src="assets/images/image-product-4-thumbnail.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+                    </div>
+                  </div>
+
+
+                  <!-- The Modal/Lightbox -->
+                <div id="myModal" class="modal">
+                    <span class="close cursor" onclick="closeModal()">&times;</span>
+                     <div class="modal-content">
+  
+                    <div class="mySlides">
+                    <img class="zoom" src="assets/images/image-product-1.jpg" style="width:50%">
+                    </div>
+  
+                    <div class="mySlides">
+                    <img class="zoom" src="assets/images/image-product-2.jpg" style="width:50%">
+                    </div>
+  
+                     <div class="mySlides">
+                    <img class="zoom" src="assets/images/image-product-3.jpg" style="width:50%">
+                    </div>
+  
+                    <div class="mySlides">
+                    <img class="zoom" src="assets/images/image-product-4.jpg" style="width:50%">
+                    </div>
+  
+                    <!-- Next/previous controls -->
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+  
+                <!-- Thumbnail image controls -->
+                    <div class="column">
+                    <img class="demo" src="assets/images/image-product-1-thumbnail.jpg" onclick="currentSlide(1)">
+                    </div>
+  
+                    <div class="column">
+                    <img class="demo" src="assets/images/image-product-2-thumbnail.jpg" onclick="currentSlide(2)">
+                    </div>
+  
+                    <div class="column">
+                    <img class="demo" src="assets/images/image-product-3-thumbnail.jpg" onclick="currentSlide(3)">
+                    </div>
+  
+                    <div class="column">
+                    <img class="demo" src="assets/images/image-product-4-thumbnail.jpg" onclick="currentSlide(4)">
+                    </div>
+                </div>
+                </div>
+  
+
+
+
+
+
+
+            </div>
             <h1>SNEAKER COMPANY</h1>
             <div id="description">
                 <h2>Fall Limited Edition Sneakers</h2>
