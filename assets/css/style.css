@@ -348,6 +348,7 @@ p{
     position: fixed;
     z-index: 1;
     padding-top: 100px;
+    
     left: 0;
     top: 0;
     width: 100%;
@@ -359,9 +360,11 @@ p{
   /* Modal Content */
   .modal-content {
     position: relative;
+    
     margin: auto;
     padding: 0;
     width: 50%;
+   bottom: 1rem;
   }
     
 
@@ -670,6 +673,7 @@ p{
           /* Modal Content */
           .modal-content {
             position: relative;
+            top: 8rem;
             margin: auto;
             padding: 0;
             width: 50%;
@@ -679,7 +683,7 @@ p{
           .close {
             color: white;
             position: absolute;
-            top: 8rem;
+            top: 12rem;
             right: 55rem;
             font-size: 4rem;
             font-weight: bold;
