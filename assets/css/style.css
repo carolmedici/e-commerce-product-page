@@ -11,6 +11,7 @@
 :root{
     /*colors*/
     --button-color: #ff7d1a;
+    --button-color-select: #c46115;
     --shadow-buton: #ffede0;
     --title-color: #1d2025;
     --text-color:#68707d;
@@ -43,7 +44,7 @@ flex-grow: 1;
 }
 
 #menu{
-z-index: 2;
+
 margin-top: -1.4rem;
 }
 
@@ -76,6 +77,8 @@ transform: translateY(4px);
 transition: 0.3s ease;
 display: none;
 background-color: white;
+
+
 
 
 }
@@ -112,20 +115,22 @@ color: var(--button-color);
 top: 0;
 left: 0;
 position: absolute;
-z-index: 1;
+
 }
 
 .menu-bg {
-z-index: 1;
+
 margin: 3rem 0 2rem 2rem;
 background-color: white;
 transition: 0.3s ease;
+
 }
 
 .change{
 display: block;
 margin-left: -2rem;
-z-index: 1;
+
+
 }
 
 
@@ -213,17 +218,15 @@ p{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
- 
-  
+    max-width: 150rem;
+    position: relative;
+    margin: 0;
 }
 
 /* Hide the images by default */
 .mymobileSlides {
   display: none;
-  z-index:-1 ;
+ 
 }
 
 
@@ -391,7 +394,9 @@ p{
         color: var(--title-color);
     }
 
-
+.addCart:hover{
+        background-color: var(--button-color-select);
+}
 
     
 @media (min-width: 22rem) {
@@ -669,7 +674,7 @@ p{
               /* Modal Content */
               .modal-content {
                 position: relative;
-                top: 8rem;
+                top: 7rem;
                 margin: auto;
                 padding: 0;
                 width: 50%;
@@ -680,7 +685,7 @@ p{
                 color: white;
                 position: absolute;
                 top: 12rem;
-                right: 55rem;
+                right: 54rem;
                 font-size: 4rem;
                 font-weight: bold;
               }
@@ -730,8 +735,9 @@ p{
     
                /* Position the "previous button" to the right */
                .prev {
-                right: 54rem;
+                right: 53rem;
                 border-radius: 3px 0 0 3px;
+                
               }
     
               
@@ -745,14 +751,17 @@ p{
               .active,
               .demo:hover {
                 opacity: 1;
+                
               }
               
               img.hover-shadow {
                 transition: 0.3s;
+                
               }
               
               .hover-shadow:hover {
-                box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+                box-shadow: 2px 2px 2px 1px var(--button-color);
+                
               }
     
     
@@ -787,7 +796,7 @@ p{
             .demo{
                 width: 8rem;
                 border-radius: 0.8rem;
-                margin-left: 1rem;
+                margin-left: 0.7rem;
                 position: relative;
                 left: 18rem;
                 opacity: 0.6;
