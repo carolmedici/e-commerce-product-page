@@ -39,7 +39,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/carolmedici/e-commerce-product-page](https://github.com/carolmedici/e-commerce-product-page)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://carolmedici.github.io/e-commerce-product-page/](https://carolmedici.github.io/e-commerce-product-page/)
 
 ## My process
 
@@ -47,10 +47,11 @@ Users should be able to:
 
 - Semantic HTML5 
 - CSS custom properties
-- Flexbox
 - CSS Grid
-- Mobile-first workflow
-- JS 
+- Mobile-first 
+- Slideshow
+- Lightbox
+- Hamburguer menu 
 
 
 
@@ -148,7 +149,6 @@ function mobileSlides(n) {
   dots[slideIndexmobile-1].className += " active";
 }
 ```
-
 
 
 ### Continued development
